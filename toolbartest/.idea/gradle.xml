@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="F:\devtool\AndroidStudio2\gradle\gradle-2.8" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/.." />
+            <option value="$PROJECT_DIR$/../LinkedListView" />
+            <option value="$PROJECT_DIR$/../LinkedListView2" />
+            <option value="$PROJECT_DIR$/../gridtest" />
+            <option value="$PROJECT_DIR$/../library" />
+            <option value="$PROJECT_DIR$/../mystickylistheaders" />
+            <option value="$PROJECT_DIR$/../mystickylistheaders2" />
+            <option value="$PROJECT_DIR$/../scrollerDemo" />
+            <option value="$PROJECT_DIR$/../scrollertest" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../viewtest" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
