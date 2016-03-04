@@ -9,15 +9,12 @@ import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.lialzm.hyb.toolbartest.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private ListView lv;
-    //测量值
     private float headerHeight;//顶部高度
 
     @Override
@@ -39,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             list.add("item" + i);
         }
         headerHeight = dp2px(200);
+
         lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, list));
         lv.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
                 float scrollY = getScrollY(view);
-                float offset = 1 - Math.max((headerHeight - scrollY) / headerHeight, 0f);
+                float offset = 1 - Math.max((headerHeight - toolbar.getHeight() - scrollY) / (headerHeight - toolbar.getHeight()), 0f);
                 toolbar.getBackground().setAlpha((int) (offset * 255));
 
             }
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 dpVal, getResources().getDisplayMetrics());
     }
-
 
 
     /**
